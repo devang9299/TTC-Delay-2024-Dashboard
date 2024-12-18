@@ -42,7 +42,7 @@ To address these challenges, this project focuses on two primary business requir
 Ultimately, this project aims to deliver actionable insights that the TTC can use to improve service reliability, reduce delays, and enhance the overall transit experience for its customers.
 
 # 4. Analytics questions 
-**Descriptive Analytics Questions:** These questions focus on understanding historical patterns and summarizing trends from the delay data.
+ =>**Descriptive Analytics Questions:** These questions focus on understanding historical patterns and summarizing trends from the delay data.
 
 a)	What are the most frequent causes of bus delays?
 
@@ -64,7 +64,7 @@ i)	How often do delays occur at key locations (like Bloor-Yonge or Union Station
 
 j)	Which vehicle types (bus, streetcar, subway) have the most delays?
 
-**Diagnostic Analytics Questions:** These questions focus on exploring the relationships between variables and identifying patterns in delays.
+ =>**Diagnostic Analytics Questions:** These questions focus on exploring the relationships between variables and identifying patterns in delays.
 
 a)	Which routes have the longest delays and why?
 
@@ -86,7 +86,7 @@ i)	How does delay duration differ by day of the week?
 
 j)	Are delays worse during peak hours (morning/evening rush)?
 
-**Predictive Analytics Questions:**
+ =>**Predictive Analytics Questions:**
 
 a)	Can we predict which routes are likely to experience delays tomorrow?
 
