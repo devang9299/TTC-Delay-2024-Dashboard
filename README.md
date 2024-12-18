@@ -160,24 +160,28 @@ Following are the secondary datasets
  
 # 8. Brief overview of data manipulation process and data output
 The manipulation of data involves preparing it for analysis by addressing issues such as missing values, inconsistent formats, and scaling differences among features. In this case, the steps undertaken were:
-Handling Missing Values:
-Missing data is a common issue in datasets. To address this: Imputation with Min-Max Scaling: Missing values were replaced using a method informed by the range of the data. Min-max scaling transforms the data to a specified range, typically between 0 and 1, Here, missing values may be filled by interpolating or imputing values derived from this scaled range, ensuring that the imputed data maintains consistency with the normalized dataset.
-•	Deriving Longitude and Latitude
-For the missing geographic coordinates (longitude and latitude), machine learning algorithms were employed. This involves:
-1.	Predictive Modeling:
-a.	Feature Engineering: Other features in the dataset (e.g., city, zip code, address, regional identifiers) were used as predictors for longitude and latitude.
-b.	Algorithm Choice: Regression algorithms such as Decision Trees, Random Forests, or Gradient Boosting could be used to predict the continuous outputs of longitude and latitude.
-2.	Training the Model:
-a.	A training dataset with complete geographic data was used to train the model.
-b.	The model learns the patterns and associations between the predictors and the geographic coordinates.
-3.	Prediction:
-a.	The trained model was then used to estimate the missing longitude and latitude for rows where these values were unavailable.
-•	Advantages of This Approach
-1.	Comprehensive Data: Filling missing values ensures that no data points are discarded, which is crucial for maintaining robust analysis and avoiding biases.
-2.	Consistent Scaling: Min-max scaling ensures uniformity in data ranges, reducing issues of disproportionate weighting during analysis.
-3.	Enhanced Geographical Information: Using machine learning to derive coordinates enables the enrichment of the dataset with crucial spatial information, unlocking opportunities for geospatial analysis and visualization.
-•	Implications
-These preprocessing techniques not only address data quality issues but also enhance the dataset for downstream tasks such as clustering, mapping, or any other analytical procedures that depend on complete and normalized data.
+
+**Handling Missing Values:** Missing data is a common issue in datasets. To address this: Imputation with Min-Max Scaling: Missing values were replaced using a method informed by the range of the data. Min-max scaling transforms the data to a specified range, typically between 0 and 1, Here, missing values may be filled by interpolating or imputing values derived from this scaled range, ensuring that the imputed data maintains consistency with the normalized dataset.
+
+**•	Deriving Longitude and Latitude:** For the missing geographic coordinates (longitude and latitude), machine learning algorithms were employed. This involves:
+**1.	Predictive Modeling:**
+   **a.	Feature Engineering:** Other features in the dataset (e.g., city, zip code, address, regional identifiers) were used as predictors for longitude and latitude.
+   **b.	Algorithm Choice:** Regression algorithms such as Decision Trees, Random Forests, or Gradient Boosting could be used to predict the continuous outputs of longitude and latitude.
+
+**2.	Training the Model:**
+   a.	A training dataset with complete geographic data was used to train the model.
+   b.	The model learns the patterns and associations between the predictors and the geographic coordinates.
+
+**3.	Prediction:**
+   a.	The trained model was then used to estimate the missing longitude and latitude for rows where these values were unavailable.
+
+**•	Advantages of This Approach**
+
+**1.	Comprehensive Data:** Filling missing values ensures that no data points are discarded, which is crucial for maintaining robust analysis and avoiding biases.
+**2.	Consistent Scaling:** Min-max scaling ensures uniformity in data ranges, reducing issues of disproportionate weighting during analysis.
+**3.	Enhanced Geographical Information:** Using machine learning to derive coordinates enables the enrichment of the dataset with crucial spatial information, unlocking opportunities for geospatial analysis and visualization.
+
+**•	Implications:** These preprocessing techniques not only address data quality issues but also enhance the dataset for downstream tasks such as clustering, mapping, or any other analytical procedures that depend on complete and normalized data.
 
 # 9. New solution design and it’s fit into the existing IT architecture
 Note: check attached files (existing IT architecture diagram)
@@ -198,107 +202,125 @@ The proposed solution introduces an enhanced data processing pipeline and busine
 Note: Check attached files (new IT solution architecture)
 
 The new solution seamlessly integrates into TTC’s existing IT architecture by building on existing infrastructure and data sources while enhancing analytics capabilities: 
-•	Data Integration:  Data from APIs, the TTC website, the Presto App, and customer 
-reviews are fed into the ETL server, which performs data intake and 
-transformation. This fits within the current data flow without disrupting the 
-existing systems. 
-•	Enhanced Security: The main server and database remain protected by firewalls, 
-maintaining security protocols already in place. The solution introduces new data 
-science models and BI tools while ensuring data privacy and security. 
-•	Improved Business Intelligence and Analytics: Power BI dashboards and 
-predictive models are new elements that augment TTC’s analytical capabilities 
-without affecting the basic IT components. Business intelligence users, such as finance and marketing teams can access these insights within their existing 
-workflows. 
-•	Scalable Architecture: The machine learning models, and BI dashboards are 
-designed to scale based on the organization's data volume and user demand, 
-allowing TTC to adapt as data needs grow over me.
+
+**•	Data Integration:**  Data from APIs, the TTC website, the Presto App, and customer reviews are fed into the ETL server, which performs data intake and transformation. This fits within the current data flow without disrupting the existing systems. 
+
+**•	Enhanced Security:** The main server and database remain protected by firewalls, maintaining security protocols already in place. The solution introduces new data science models and BI tools while ensuring data privacy and security. 
+
+**•	Improved Business Intelligence and Analytics:** Power BI dashboards and predictive models are new elements that augment TTC’s analytical capabilities without affecting the basic IT components. Business intelligence users, such as finance and marketing teams can access these insights within their existing workflows. 
+
+**•	Scalable Architecture:** The machine learning models, and BI dashboards are designed to scale based on the organization's data volume and user demand, allowing TTC to adapt as data needs grow over me.
 
 # 10. New solution implementation and outcome testing
 Note: Check PowerBI dashboard file (Capstone_final)
 
 # 11. Potential solution optimization  
-1. Descriptive Analytics Optimization
-a. Most Frequent Causes of Delays
-•	Solution:
-o	Implement targeted training for drivers and dispatchers to handle frequent issues like "General Delays" or "Vision."
-o	Introduce technology solutions like real-time GPS monitoring to preemptively address potential delays.
-o	Develop rapid response teams for high-frequency incident types.
-b. Routes Experiencing the Most Delays
-•	Solution:
-o	Reevaluate schedules and traffic patterns for these routes.
-o	Use dynamic scheduling during high-traffic periods to reduce congestion.
-o	Introduce bus-only lanes on heavily delayed routes where feasible.
-c. Times of Day with High Delay Frequency
-•	Solution:
-o	Optimize workforce allocation (drivers, support staff) during peak hours.
-o	Implement staggered dispatch timings to reduce bottlenecks during rush hours.
-d. Days of the Week with Most Delays
-•	Solution:
-o	Analyze specific weekday trends and adjust schedules accordingly.
-o	Collaborate with city traffic management to improve signal timing on these days.
-e. Delays by Month or Season
-•	Solution:
-o	Increase vehicle maintenance checks during winter months to prevent weather-related delays.
-o	Provide training for drivers on handling seasonal challenges like snow or rain.
-f. Total Delay Time by Route and Month
-•	Solution:
-o	Prioritize infrastructure improvements on routes with consistently high delay durations.
-o	Test route diversions to reduce travel times.
-g. Key Locations with Frequent Delays
-•	Solution:
-o	Work with city planners to improve congestion at critical intersections like Bloor-Yonge or Union Station.
-o	Add more frequent service intervals at these locations to distribute passenger loads.
-h. Vehicle Types with the Most Delays
-•	Solution:
-o	Upgrade older vehicles (buses, streetcars) that frequently experience mechanical issues.
-o	Expand the use of real-time monitoring systems for all vehicle types.
-2. Diagnostic Analytics Optimization
-a. Routes with Longest Delays
-•	Solution:
-o	Perform route-specific audits to identify and mitigate recurring delay causes.
-o	Use predictive traffic analysis to dynamically reroute vehicles.
-b. Incident Types Causing Long Delays
-•	Solution:
-o	Introduce preventive maintenance programs for mechanical incidents.
-o	Strengthen security measures to reduce delays caused by disturbances.
-c. Long Delays by Time of Day
-•	Solution:
-o	Optimize route schedules for off-peak and peak times differently.
-o	Use data-driven simulations to test delay reduction strategies for long delays during certain periods.
-d. Locations with Frequent Long Delays
-•	Solution:
-o	Introduce bypass routes or express lanes for vehicles at congested locations.
-o	Enhance coordination with local traffic authorities.
-e. Peak Hours
-•	Solution:
-o	Increase vehicle frequency and capacity during morning and evening rush hours.
-o	Implement staggered boarding strategies to reduce boarding times.
-3. Predictive Analytics Optimization
-a. Predict Delays on Specific Routes
-•	Solution:
-o	Build machine learning models using historical data to predict delays and preemptively adjust schedules.
-o	Use AI-driven alerts for real-time dispatch adjustments.
-b. Forecast Delays for Next Month
-•	Solution:
-o	Use seasonal and trend-based forecasting to optimize workforce and vehicle assignments.
-o	Plan for additional resources during forecasted high-delay periods.
-c. Times of Day Likely to Experience Delays
-•	Solution:
-o	Deploy data-driven simulations to test new schedules during predicted delay times.
-o	Use crowd monitoring systems to distribute passenger loads effectively.
-d. Likelihood of Long Delays on Specific Routes
-•	Solution:
-o	Monitor live vehicle performance and dynamically reroute vehicles showing early signs of delays.
-o	Use predictive alerts to deploy backup vehicles or staff as needed.
-e. Average Delay Duration for Next Week
-•	Solution:
-o	Use historical data to determine optimal buffer times for routes, adjusting schedules to prevent cascading delays.
-o	Introduce service reliability monitoring dashboards for proactive adjustments.
-General Optimization Strategies
+**1. Descriptive Analytics Optimization**
+   a. Most Frequent Causes of Delays
+   
+   •	Solution:
+      o	Implement targeted training for drivers and dispatchers to handle frequent issues like "General Delays" or "Vision."
+      o	Introduce technology solutions like real-time GPS monitoring to preemptively address potential delays.
+      o	Develop rapid response teams for high-frequency incident types.
+   
+   b. Routes Experiencing the Most Delays
+   •	Solution:
+      o	Reevaluate schedules and traffic patterns for these routes.
+      o	Use dynamic scheduling during high-traffic periods to reduce congestion.
+      o	Introduce bus-only lanes on heavily delayed routes where feasible.
+  
+   c. Times of Day with High Delay Frequency
+   •	Solution:
+      o	Optimize workforce allocation (drivers, support staff) during peak hours.
+      o	Implement staggered dispatch timings to reduce bottlenecks during rush hours.
+   
+   d. Days of the Week with Most Delays
+   •	Solution:
+      o	Analyze specific weekday trends and adjust schedules accordingly.
+      o	Collaborate with city traffic management to improve signal timing on these days.
+
+   e. Delays by Month or Season
+   •	Solution:
+      o	Increase vehicle maintenance checks during winter months to prevent weather-related delays.
+      o	Provide training for drivers on handling seasonal challenges like snow or rain.
+
+   f. Total Delay Time by Route and Month
+   •	Solution:
+      o	Prioritize infrastructure improvements on routes with consistently high delay durations.
+      o	Test route diversions to reduce travel times.
+
+   g. Key Locations with Frequent Delays
+   •	Solution:
+      o	Work with city planners to improve congestion at critical intersections like Bloor-Yonge or Union Station.
+      o	Add more frequent service intervals at these locations to distribute passenger loads.
+
+   h. Vehicle Types with the Most Delays
+   •	Solution:
+      o	Upgrade older vehicles (buses, streetcars) that frequently experience mechanical issues.
+      o	Expand the use of real-time monitoring systems for all vehicle types.
+
+**2. Diagnostic Analytics Optimization**
+   a. Routes with Longest Delays
+   •	Solution:
+      o	Perform route-specific audits to identify and mitigate recurring delay causes.
+      o	Use predictive traffic analysis to dynamically reroute vehicles.
+  
+   b. Incident Types Causing Long Delays
+   •	Solution:
+      o	Introduce preventive maintenance programs for mechanical incidents.
+      o	Strengthen security measures to reduce delays caused by disturbances.
+ 
+   c. Long Delays by Time of Day
+   •	Solution:
+      o	Optimize route schedules for off-peak and peak times differently.
+      o	Use data-driven simulations to test delay reduction strategies for long delays during certain periods.
+
+   d. Locations with Frequent Long Delays
+   •	Solution:
+      o	Introduce bypass routes or express lanes for vehicles at congested locations.
+      o	Enhance coordination with local traffic authorities.
+
+   e. Peak Hours
+   •	Solution:
+      o	Increase vehicle frequency and capacity during morning and evening rush hours.
+      o	Implement staggered boarding strategies to reduce boarding times.
+
+**3. Predictive Analytics Optimization**
+   a. Predict Delays on Specific Routes
+   •	Solution:
+      o	Build machine learning models using historical data to predict delays and preemptively adjust schedules.
+      o	Use AI-driven alerts for real-time dispatch adjustments.
+
+   b. Forecast Delays for Next Month
+   •	Solution:
+      o	Use seasonal and trend-based forecasting to optimize workforce and vehicle assignments.
+      o	Plan for additional resources during forecasted high-delay periods.
+
+   c. Times of Day Likely to Experience Delays
+   •	Solution:
+      o	Deploy data-driven simulations to test new schedules during predicted delay times.
+      o	Use crowd monitoring systems to distribute passenger loads effectively.
+
+   d. Likelihood of Long Delays on Specific Routes
+   •	Solution:
+      o	Monitor live vehicle performance and dynamically reroute vehicles showing early signs of delays.
+      o	Use predictive alerts to deploy backup vehicles or staff as needed.
+
+   e. Average Delay Duration for Next Week
+   •	Solution:
+      o	Use historical data to determine optimal buffer times for routes, adjusting schedules to prevent cascading delays.
+      o	Introduce service reliability monitoring dashboards for proactive adjustments.
+
+# General Optimization Strategies
+
 •	Data-Driven Decision Making: Use insights from dashboards to implement real-time adjustments to schedules, routing, and resource allocation.
+
 •	Technology Integration: Deploy IoT devices and GPS systems for real-time tracking and proactive incident management.
+
 •	Stakeholder Collaboration: Work closely with city authorities to address external factors like traffic congestion and signal timing.
+
 •	Customer Feedback: Use passenger feedback to identify recurring issues and fine-tune services.
+
 •	Continuous Improvement: Regularly monitor metrics like average delay times, frequency of incidents, and customer satisfaction to evaluate the impact of implemented changes.
 
 # 12. Appendix  
