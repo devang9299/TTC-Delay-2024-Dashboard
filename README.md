@@ -32,12 +32,16 @@ The Toronto Transit Commission (TTC) plays a critical role in ensuring efficient
 The project adopts a data-driven approach to understand the causes of delays, predict future disruptions, and offer practical insights to decision-makers. Using advanced analytics and machine learning techniques, the goal is to design a predictive system that integrates smoothly with the existing TTC IT infrastructure. This system will support better decision-making, enhance scheduling, and improve commuter experience.
 
 The report is divided into four key stages, each focusing on a critical aspect of the project:
+
 **1.	Business Problem Identification and Scope Analysis:**
 This stage defines the key challenges faced by the TTC, such as the primary causes of delays and their impact on operational efficiency. The problem is structured to align with the project’s business objectives.
+
 **2.	Data Preparation and Manipulation:**
 In this stage, data is collected, cleaned, and transformed to make it suitable for analysis. Data is sourced from multiple platforms, including the TTC’s open data portal, Presto app, customer reviews, and weather data. Processes such as data cleaning, categorisation, and variable transformation are performed to ensure high data quality.
+
 **3.	Solution Design and Integration with Existing IT Architecture:**
 This stage outlines the design of a predictive system, which includes developing ETL (Extract, Transform, Load) processes, machine learning models, and dashboards. The system is designed to integrate with TTC’s existing IT infrastructure, ensuring a smooth flow of data and effective system compatibility.
+
 **4.	Solution Implementation, Outcome Testing, and Optimisation:**
 This stage focuses on the system’s deployment, testing, and refinement. Machine learning models such as Random Forest, Artificial Neural Networks (ANNs), and K-means clustering are used to predict and understand delays. Testing and optimisation are carried out to ensure the models are accurate, reliable, and capable of delivering actionable insights to TTC stakeholders.
 
