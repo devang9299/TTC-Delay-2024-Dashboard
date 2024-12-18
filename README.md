@@ -1,4 +1,4 @@
-# TTC Delay - Project Report
+# TTC Delay 2024 - Project Report
 
 # 1. Executive summary
 This project focuses on analyzing and optimizing the Toronto Transit Commission (TTC) delay patterns using descriptive, diagnostic, and predictive analytics. By leveraging historical data and dashboards built in Power BI, the project aims to uncover the root causes of delays, identify high-impact problem areas, and provide actionable recommendations to improve service efficiency and customer satisfaction.
