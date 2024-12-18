@@ -5,11 +5,16 @@ This project focuses on analyzing and optimizing the Toronto Transit Commission 
 
 # Key Findings
 1.	Descriptive Analytics:
+   
    •	Most Frequent Causes: General delays and vision-related issues are the top contributors to delays.
+   
   	•	High-Impact Routes: Specific bus and streetcar routes consistently experience the most delays.
+   
   	•	Timing Trends: Morning and evening rush hours see the highest frequency of delays, particularly on weekdays.
+   
   	•	Seasonal and Location Patterns: Delays peak during winter months and are concentrated at key transit hubs such as Bloor-Yonge and Union Station.
-2.	Diagnostic Analytics:
+   
+3.	Diagnostic Analytics:
    •	Incident Correlations: Long delays are often associated with security issues and mechanical failures.
   	•	Peak Hour Challenges: Morning and evening rush hours face compounded delays due to traffic congestion and increased passenger volumes.
   	•	Vehicle Performance: Buses experience a higher frequency of delays compared to streetcars and subways.
