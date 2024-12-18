@@ -42,37 +42,62 @@ To address these challenges, this project focuses on two primary business requir
 Ultimately, this project aims to deliver actionable insights that the TTC can use to improve service reliability, reduce delays, and enhance the overall transit experience for its customers.
 
 # 4. Analytics questions 
-Descriptive Analytics Questions: These questions focus on understanding historical patterns and summarizing trends from the delay data.
+**Descriptive Analytics Questions:** These questions focus on understanding historical patterns and summarizing trends from the delay data.
 
 a)	What are the most frequent causes of bus delays?
+
 b)	Which routes experience the most delays?
 
 c)	Which time of day (morning, afternoon, evening) experiences the highest frequency of delays?
+
 d)	Which days of the week have the most delays?
+
 e)	How do delays vary by month or season?
+
 f)	What is the total delay time by route and month?
+
 g)	How many delays occurred each month over the past year?
+
 h)	What is the distribution of delay types (Short, Medium, Long) across routes?
+
 i)	How often do delays occur at key locations (like Bloor-Yonge or Union Station)?
+
 j)	Which vehicle types (bus, streetcar, subway) have the most delays?
 
-Diagnostic Analytics Questions: These questions focus on exploring the relationships between variables and identifying patterns in delays.
+**Diagnostic Analytics Questions:** These questions focus on exploring the relationships between variables and identifying patterns in delays.
+
 a)	Which routes have the longest delays and why?
+
 b)	What incident types are most likely to cause long delays?
+
 c)	Are there certain times of day when long delays are more likely to occur?
+
 d)	How do weather conditions impact delay times?
+
 e)	What is the relationship between traffic congestion and delays?
+
 f)	Which incident types are most common on specific routes?
+
 g)	Do certain vehicle types experience more delays than others?
+
 h)	What locations experience the most delays, and what are the primary causes?
+
 i)	How does delay duration differ by day of the week?
+
 j)	Are delays worse during peak hours (morning/evening rush)?
-Predictive Analytics Questions: 
+
+**Predictive Analytics Questions:**
+
 a)	Can we predict which routes are likely to experience delays tomorrow?
+
 b)	What is the forecasted number of delays for the next month?
+
 c)	Which times of day are most likely to experience delays tomorrow?
+
 d)	Can we predict the likelihood of long delays on specific routes?
+
 e)	What will be the average delay duration for next week?
+
    
 # 5. Scope statement 
 
