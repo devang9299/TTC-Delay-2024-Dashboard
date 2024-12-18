@@ -45,8 +45,8 @@ Ultimately, this project aims to deliver actionable insights that the TTC can us
 Descriptive Analytics Questions: These questions focus on understanding historical patterns and summarizing trends from the delay data.
 
 a)	What are the most frequent causes of bus delays?
-
 b)	Which routes experience the most delays?
+
 c)	Which time of day (morning, afternoon, evening) experiences the highest frequency of delays?
 d)	Which days of the week have the most delays?
 e)	How do delays vary by month or season?
