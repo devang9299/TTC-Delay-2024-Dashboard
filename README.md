@@ -183,11 +183,16 @@ These preprocessing techniques not only address data quality issues but also enh
 Note: check attached files (existing IT architecture diagram)
 Overview of Solution Design 
 The proposed solution introduces an enhanced data processing pipeline and business intelligence system that is built to transform TTC's data into aconable insights for operational optmization. The system integrates ETL processes, data storage, machine learning, and advanced reporting through Power BI dashboards. This solution is intended to automate and improve the accuracy of reporting and predictive analysis for TTC, providing an interactive KPI dashboard, robust predictive model outputs, and actionable data for marketing, finance, and customer communications. 
-Key Components 
-·	Data Collecon and ETL Processes: The solution begins with data collection from diverse sources, including the TTC website, Presto App, customer reviews, and weather APIs. These sources provide a continuous stream of real-time and historical data. The ETL server processes raw data, handles data intake and cleans and transforms steps. This structured and clean data is stored in a centralized database, accessible for downstream processes. 
-·	Data Storage: The central database is hosted on secure servers with firewall protocol, ensuring data security and regulatory compliance. The database contains structured data for reporting, analyses, and machine learning models. 
-·	 Machine Learning Algorithms for Prediction: The solution includes machine learning algorithms such as Artificial Neural Networks (ANN), Random Forest, and K-means clustering, used to predict bus delay patterns, optimize routes, and improve service reliability. These algorithms are designed for scalability, handling varying data volumes efficiently. 
-·	Business Intelligence and Reporting with Power BI: The solution’s reporting interface is developed in Power BI. It provides KPI dashboards that consolidate TTC's key metrics, such as delay times, route efficiency, and customer satisfaction scores. This accessible interface enables non-technical stakeholders to interact with data visualizations and retrieve valuable insights. 
+
+**Key Components** 
+
+**·	Data Collecon and ETL Processes:** The solution begins with data collection from diverse sources, including the TTC website, Presto App, customer reviews, and weather APIs. These sources provide a continuous stream of real-time and historical data. The ETL server processes raw data, handles data intake and cleans and transforms steps. This structured and clean data is stored in a centralized database, accessible for downstream processes. 
+
+**·	Data Storage:** The central database is hosted on secure servers with firewall protocol, ensuring data security and regulatory compliance. The database contains structured data for reporting, analyses, and machine learning models. 
+
+**·	 Machine Learning Algorithms for Prediction:** The solution includes machine learning algorithms such as Artificial Neural Networks (ANN), Random Forest, and K-means clustering, used to predict bus delay patterns, optimize routes, and improve service reliability. These algorithms are designed for scalability, handling varying data volumes efficiently. 
+
+**·	Business Intelligence and Reporting with Power BI:** The solution’s reporting interface is developed in Power BI. It provides KPI dashboards that consolidate TTC's key metrics, such as delay times, route efficiency, and customer satisfaction scores. This accessible interface enables non-technical stakeholders to interact with data visualizations and retrieve valuable insights. 
 
 **Fit of the new solution into the existing IT architecture**
 Note: Check attached files (new IT solution architecture)
