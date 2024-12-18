@@ -115,29 +115,45 @@ e)	What will be the average delay duration for next week?
 # 5. Scope statement 
 
 The scope of this project is focused on analyzing the TTC bus delay dataset to derive actionable insights that can improve service reliability. The scope includes the following key areas:
-1. Data Analysis: The TTC bus delay dataset is thoroughly analyzed to identify trends and insights related to delays.
-2. Model Development: Machine learning models are developed to predict delays and analyze contributing factors such as route, time, and incident type.
-3. Visualization: The findings of the analysis are be presented through visualizations such as graphs and dashboards, making it easier for decision-makers to understand the key factors contributing to delays.
-4. Deliverables: The final deliverables for this project include a comprehensive report summarizing the analysis findings, a set of visual dashboards for decisionmakers, and delay prediction models that can be used by the TTC to predict future delays and optimize operations.
+
+**1. Data Analysis:** The TTC bus delay dataset is thoroughly analyzed to identify trends and insights related to delays.
+
+**2. Model Development:** Machine learning models are developed to predict delays and analyze contributing factors such as route, time, and incident type.
+
+**3. Visualization:** The findings of the analysis are be presented through visualizations such as graphs and dashboards, making it easier for decision-makers to understand the key factors contributing to delays.
+
+**4. Deliverables:** The final deliverables for this project include a comprehensive report summarizing the analysis findings, a set of visual dashboards for decisionmakers, and delay prediction models that can be used by the TTC to predict future delays and optimize operations.
 The project focuses on providing data-driven insights that can help the TTC reduce delays, improve operational efficiency, and enhance the overall experience for commuters.
 
 # 6. Data sources/key data entities and flows
 Data sources: The data originates from the Open Data Portal of the City of Toronto, specifically focusing on the Toronto Transit Commission (TTC) delay datasets. The datasets provide detailed records of delays across different modes of public transportation in Toronto. Below are primary datasets: 
+
 •	TTC Bus Delay Data: This database contains records of delays on various bus routes in Toronto, including attributes like Date, Time, Route, Location, Incident Type, Delay Duration, and Vehicle Details. 
+
 •	TTC Streetcar Delay Data: Provides information on streetcar delays, with similar attributes to the bus delay dataset, attributes like Date, Time, Route, Location, Incident Type, Delay Duration, and Vehicle Details 
+
 •	TTC Subway Delay Data: Includes data on subway delays, offering insights into issues affecting underground transit routes. Some of the attributes are Date, Time, Day, Station, Code, Min Delay, Min Gap, Bound, Line, Vehicle.
+
 The data is in an excel file (XLXS format) on the City of Toronto's Open Data Portal. Each dataset can be directly downloaded and processed for analysis.
 Following are the secondary datasets 
-•	Stops: This dataset includes all the bus, streetcar and subway stops name and their geographic location.
-•	Routes: This dataset includes routes of all bus, streetcar and subway routes in greater Toronto area.
-•	Key Data Entities: The business problem revolves around understanding, analyzing, and mitigating delays in Toronto's transit system. The main business data entities relevant to this problem include:
-•	Date/Time: Timestamp indicating when the delay occurred.
-•	Route: Specifies the route number or name where the delay happened.
-•	Location: Describes the geographical area or station where the delay was reported.
-•	Incident Type: Categorical data that identifies the reason for the delay (e.g., Traffic,
-•	Security Issue, Mechanical Failure).
-•	Min Duration: Numeric data showing the length of the delay in minutes.
-•	Vehicle Details: Information about the type of vehicle involved in the delay, such as bus number or streetcar ID.
+
+•	**Stops:** This dataset includes all the bus, streetcar and subway stops name and their geographic location.
+
+•	**Routes:** This dataset includes routes of all bus, streetcar and subway routes in greater Toronto area.
+
+•	**Key Data Entities:** The business problem revolves around understanding, analyzing, and mitigating delays in Toronto's transit system. The main business data entities relevant to this problem include:
+
+•	**Date/Time:** Timestamp indicating when the delay occurred.
+
+•	**Route:** Specifies the route number or name where the delay happened.
+
+•	**Location:** Describes the geographical area or station where the delay was reported.
+
+•	**Incident Type:** Categorical data that identifies the reason for the delay (e.g., Traffic, Security Issue, Mechanical Failure).
+
+•	**Min Duration:** Numeric data showing the length of the delay in minutes.
+
+•	**Vehicle Details:** Information about the type of vehicle involved in the delay, such as bus number or streetcar ID.
 
  # 7. Data flow:
  Check attached files(data process diagram) for the diagram
