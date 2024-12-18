@@ -32,19 +32,22 @@ The Toronto Transit Commission (TTC) plays a critical role in ensuring efficient
 The project adopts a data-driven approach to understand the causes of delays, predict future disruptions, and offer practical insights to decision-makers. Using advanced analytics and machine learning techniques, the goal is to design a predictive system that integrates smoothly with the existing TTC IT infrastructure. This system will support better decision-making, enhance scheduling, and improve commuter experience.
 
 The report is divided into four key stages, each focusing on a critical aspect of the project:
-1.	Business Problem Identification and Scope Analysis
+**1.	Business Problem Identification and Scope Analysis:**
 This stage defines the key challenges faced by the TTC, such as the primary causes of delays and their impact on operational efficiency. The problem is structured to align with the project’s business objectives.
-2.	Data Preparation and Manipulation
+**2.	Data Preparation and Manipulation:**
 In this stage, data is collected, cleaned, and transformed to make it suitable for analysis. Data is sourced from multiple platforms, including the TTC’s open data portal, Presto app, customer reviews, and weather data. Processes such as data cleaning, categorisation, and variable transformation are performed to ensure high data quality.
-3.	Solution Design and Integration with Existing IT Architecture
+**3.	Solution Design and Integration with Existing IT Architecture:**
 This stage outlines the design of a predictive system, which includes developing ETL (Extract, Transform, Load) processes, machine learning models, and dashboards. The system is designed to integrate with TTC’s existing IT infrastructure, ensuring a smooth flow of data and effective system compatibility.
-4.	Solution Implementation, Outcome Testing, and Optimisation
+**4.	Solution Implementation, Outcome Testing, and Optimisation:**
 This stage focuses on the system’s deployment, testing, and refinement. Machine learning models such as Random Forest, Artificial Neural Networks (ANNs), and K-means clustering are used to predict and understand delays. Testing and optimisation are carried out to ensure the models are accurate, reliable, and capable of delivering actionable insights to TTC stakeholders.
-3. Business problem overview 
+
+# 3. Business problem overview
 The Toronto Transit Commission (TTC) faces a significant challenge in managing frequent bus delays, which affect operational efficiency, customer satisfaction, and service reliability. Delays increase operational costs due to higher fuel consumption, additional staffing needs, and schedule adjustments. They also disrupt the transit network, causing a ripple effect on route timings and commuter schedules. For passengers, delays lead to missed appointments, late arrivals at work, and dissatisfaction with public transport services. The complexity of handling data from multiple sources, such as route information, weather conditions, and incident reports, adds to the challenge. Although the TTC collects substantial data on delays, it struggles to utilise this information effectively for predictive and diagnostic analysis. Additionally, the complexity of managing numerous routes, incident types, and external factors (such as weather or traffic) complicates the analysis of delay data.
 To address these challenges, this project focuses on two primary business requirements:
-1. Predictive Insights: The TTC requires tools that can predict the likelihood of delays based on various factors such as route, time of day, and incident type. By leveraging predictive models, the TTC can take proactive measures to minimize delays and optimize bus scheduling.
-2. Root Cause Analysis: In addition to predictive insights, the TTC needs a thorough understanding of the root causes of delays. Identifying the most common reasons for delays (e.g., security incidents, traffic congestion) will enable the TTC to address these issues and implement preventive measures
+
+**1. Predictive Insights:** The TTC requires tools that can predict the likelihood of delays based on various factors such as route, time of day, and incident type. By leveraging predictive models, the TTC can take proactive measures to minimize delays and optimize bus scheduling.
+
+**2. Root Cause Analysis:** In addition to predictive insights, the TTC needs a thorough understanding of the root causes of delays. Identifying the most common reasons for delays (e.g., security incidents, traffic congestion) will enable the TTC to address these issues and implement preventive measures
 Ultimately, this project aims to deliver actionable insights that the TTC can use to improve service reliability, reduce delays, and enhance the overall transit experience for its customers.
 
 # 4. Analytics questions 
