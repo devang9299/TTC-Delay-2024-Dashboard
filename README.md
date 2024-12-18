@@ -133,6 +133,7 @@ Following are the secondary datasets
 •	Vehicle Details: Information about the type of vehicle involved in the delay, such as bus number or streetcar ID.
 
  # 7. Data flow:
+ Check attached files(data process diagram) for the diagram
  
 # 8. Brief overview of data manipulation process and data output
 The manipulation of data involves preparing it for analysis by addressing issues such as missing values, inconsistent formats, and scaling differences among features. In this case, the steps undertaken were:
@@ -156,6 +157,7 @@ a.	The trained model was then used to estimate the missing longitude and latitud
 These preprocessing techniques not only address data quality issues but also enhance the dataset for downstream tasks such as clustering, mapping, or any other analytical procedures that depend on complete and normalized data.
 
 # 9. New solution design and it’s fit into the existing IT architecture
+Note: check attached files (existing IT architecture diagram)
 Overview of Solution Design 
 The proposed solution introduces an enhanced data processing pipeline and business intelligence system that is built to transform TTC's data into aconable insights for operational optmization. The system integrates ETL processes, data storage, machine learning, and advanced reporting through Power BI dashboards. This solution is intended to automate and improve the accuracy of reporting and predictive analysis for TTC, providing an interactive KPI dashboard, robust predictive model outputs, and actionable data for marketing, finance, and customer communications. 
 Key Components 
@@ -165,6 +167,7 @@ Key Components
 ·	Business Intelligence and Reporting with Power BI: The solution’s reporting interface is developed in Power BI. It provides KPI dashboards that consolidate TTC's key metrics, such as delay times, route efficiency, and customer satisfaction scores. This accessible interface enables non-technical stakeholders to interact with data visualizations and retrieve valuable insights. 
 
 **Fit of the new solution into the existing IT architecture**
+Note: Check attached files (new IT solution architecture)
 
 The new solution seamlessly integrates into TTC’s existing IT architecture by building on existing infrastructure and data sources while enhancing analytics capabilities: 
 •	Data Integration:  Data from APIs, the TTC website, the Presto App, and customer 
@@ -183,7 +186,8 @@ designed to scale based on the organization's data volume and user demand,
 allowing TTC to adapt as data needs grow over me.
 
 # 10. New solution implementation and outcome testing
-  
+Note: Check PowerBI dashboard file (Capstone_final)
+
 # 11. Potential solution optimization  
 1. Descriptive Analytics Optimization
 a. Most Frequent Causes of Delays
