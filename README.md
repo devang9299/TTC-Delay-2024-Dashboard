@@ -1,4 +1,4 @@
-# TTC Delay
+# TTC Delay - Project Report
 
 # 1. Executive summary
 This project focuses on analyzing and optimizing the Toronto Transit Commission (TTC) delay patterns using descriptive, diagnostic, and predictive analytics. By leveraging historical data and dashboards built in Power BI, the project aims to uncover the root causes of delays, identify high-impact problem areas, and provide actionable recommendations to improve service efficiency and customer satisfaction.
@@ -126,9 +126,9 @@ Following are the secondary datasets
 •	Min Duration: Numeric data showing the length of the delay in minutes.
 •	Vehicle Details: Information about the type of vehicle involved in the delay, such as bus number or streetcar ID.
 
- # Data flow:
+ # 7. Data flow:
  
-# 7. Brief overview of data manipulation process and data output
+# 8. Brief overview of data manipulation process and data output
 The manipulation of data involves preparing it for analysis by addressing issues such as missing values, inconsistent formats, and scaling differences among features. In this case, the steps undertaken were:
 Handling Missing Values:
 Missing data is a common issue in datasets. To address this: Imputation with Min-Max Scaling: Missing values were replaced using a method informed by the range of the data. Min-max scaling transforms the data to a specified range, typically between 0 and 1, Here, missing values may be filled by interpolating or imputing values derived from this scaled range, ensuring that the imputed data maintains consistency with the normalized dataset.
@@ -149,7 +149,7 @@ a.	The trained model was then used to estimate the missing longitude and latitud
 •	Implications
 These preprocessing techniques not only address data quality issues but also enhance the dataset for downstream tasks such as clustering, mapping, or any other analytical procedures that depend on complete and normalized data.
 
-# 8. New solution design and it’s fit into the existing IT architecture
+# 9. New solution design and it’s fit into the existing IT architecture
 Overview of Solution Design 
 The proposed solution introduces an enhanced data processing pipeline and business intelligence system that is built to transform TTC's data into aconable insights for operational optmization. The system integrates ETL processes, data storage, machine learning, and advanced reporting through Power BI dashboards. This solution is intended to automate and improve the accuracy of reporting and predictive analysis for TTC, providing an interactive KPI dashboard, robust predictive model outputs, and actionable data for marketing, finance, and customer communications. 
 Key Components 
@@ -158,11 +158,7 @@ Key Components
 ·	 Machine Learning Algorithms for Prediction: The solution includes machine learning algorithms such as Artificial Neural Networks (ANN), Random Forest, and K-means clustering, used to predict bus delay patterns, optimize routes, and improve service reliability. These algorithms are designed for scalability, handling varying data volumes efficiently. 
 ·	Business Intelligence and Reporting with Power BI: The solution’s reporting interface is developed in Power BI. It provides KPI dashboards that consolidate TTC's key metrics, such as delay times, route efficiency, and customer satisfaction scores. This accessible interface enables non-technical stakeholders to interact with data visualizations and retrieve valuable insights. 
 
-Fit of the new solution into the existing IT architecture 
- 
-
- 
-
+**Fit of the new solution into the existing IT architecture**
 
 The new solution seamlessly integrates into TTC’s existing IT architecture by building on existing infrastructure and data sources while enhancing analytics capabilities: 
 •	Data Integration:  Data from APIs, the TTC website, the Presto App, and customer 
@@ -180,9 +176,9 @@ workflows.
 designed to scale based on the organization's data volume and user demand, 
 allowing TTC to adapt as data needs grow over me.
 
-# 9. New solution implementation and outcome testing
+# 10. New solution implementation and outcome testing
   
-# 10. Potential solution optimization  
+# 11. Potential solution optimization  
 1. Descriptive Analytics Optimization
 a. Most Frequent Causes of Delays
 •	Solution:
@@ -267,7 +263,7 @@ General Optimization Strategies
 •	Customer Feedback: Use passenger feedback to identify recurring issues and fine-tune services.
 •	Continuous Improvement: Regularly monitor metrics like average delay times, frequency of incidents, and customer satisfaction to evaluate the impact of implemented changes.
 
-# 11. Appendix  
+# 12. Appendix  
 1. Data Sources and Components
 •	CSV File: combined_ttc.csv
 o	Contains historical TTC data including transport type, routes, delays, incidents, locations, and other relevant fields.
@@ -333,7 +329,7 @@ o	Predictive models depend on sufficient historical data coverage.
 •	Develop a prototype predictive system for delay forecasting.
 •	Perform regular audits to validate the effectiveness of implemented optimizations.
  
-# 12. Conclusion
+# 13. Conclusion
 This project has provided a comprehensive analysis of TTC delay patterns through descriptive, diagnostic, and predictive analytics, leveraging historical data and Power BI dashboards. Key insights reveal significant trends, such as the impact of specific incidents, routes, and times of day on delay frequencies and durations. These findings highlight critical areas for intervention and optimization.
 The analysis identified general delays, traffic congestion, and mechanical failures as major contributors to service disruptions. Specific routes, such as those serving key transit hubs, were found to be disproportionately affected. Additionally, seasonal patterns, particularly during winter months, exacerbate delays due to adverse weather conditions.
 To address these challenges, actionable solutions were proposed:
