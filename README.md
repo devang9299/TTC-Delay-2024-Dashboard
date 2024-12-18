@@ -4,20 +4,21 @@
 This project focuses on analyzing and optimizing the Toronto Transit Commission (TTC) delay patterns using descriptive, diagnostic, and predictive analytics. By leveraging historical data and dashboards built in Power BI, the project aims to uncover the root causes of delays, identify high-impact problem areas, and provide actionable recommendations to improve service efficiency and customer satisfaction.
 
 # Key Findings
-1.	Descriptive Analytics:
+**1.	Descriptive Analytics:**
    
    •	Most Frequent Causes: General delays and vision-related issues are the top contributors to delays.
    •	High-Impact Routes: Specific bus and streetcar routes consistently experience the most delays.   
   	•	Timing Trends: Morning and evening rush hours see the highest frequency of delays, particularly on weekdays.   
   	•	Seasonal and Location Patterns: Delays peak during winter months and are concentrated at key transit hubs such as Bloor-Yonge and Union Station.
    
-2.	Diagnostic Analytics:
+**2.	Diagnostic Analytics:**
    
    •	Incident Correlations: Long delays are often associated with security issues and mechanical failures.
   	•	Peak Hour Challenges: Morning and evening rush hours face compounded delays due to traffic congestion and increased passenger volumes.
   	•	Vehicle Performance: Buses experience a higher frequency of delays compared to streetcars and subways.
 
-3.	Predictive Analytics:
+**3.	Predictive Analytics:**
+   
    •	Delay forecasting models indicate specific routes and times are more prone to delays.
   	•	Long-term trends suggest winter months and weekdays will continue to see higher delay frequencies without intervention.
 
